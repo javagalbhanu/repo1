@@ -25,4 +25,16 @@ public class LoginPage {
 	public void setUserName(String un) {
 		unTB.sendKeys(un);
 	}
+	
+	public void setPassword(String pw) {
+		pwTB.sendKeys(pw);
+	}
+	
+	public void clickLogin() {
+		loginBTN.click();
+	}
+	
+	public void verifyErrMsgDisaplayed() {
+		
+	}
 }
