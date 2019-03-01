@@ -9,6 +9,15 @@ public class LoginPage {
 	@FindBy(id="username")
 	private WebElement unTB;
 	
+	@FindBy(name="pwd")
+	private WebElement pwTB;
+	
+	@FindBy(xpath="//div[text()='Login ']")
+	private WebElement loginBTN;
+	
+	@FindBy(xpath="//span[contains(text(),'invalid')]")
+	private WebElement errMsg;
+	
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver,this);
 	}
